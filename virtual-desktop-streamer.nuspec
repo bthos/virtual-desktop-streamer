@@ -6,15 +6,15 @@
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>virtual-desktop-streamer.install</id>
-    <version>1.26.4</version>
-    <packageSourceUrl>https://github.com/bthos/virtual-desktop-streamer-install</packageSourceUrl>
+    <id>virtual-desktop-streamer</id>
+    <version>1.26.6</version>
+    <packageSourceUrl>https://github.com/bthos/virtual-desktop-streamer</packageSourceUrl>
     <owners>bthos</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Virtual Desktop Streamer (Install)</title>
+    <title>Virtual Desktop Streamer</title>
     <authors>Virtual Desktop Inc.</authors>
     <projectUrl>https://www.vrdesktop.net</projectUrl>
     <iconUrl>https://rawcdn.githack.com/bthos/virtual-desktop-streamer/13ce68736c39cb78331243d705f605173875899d/icons/vds128-icon.png</iconUrl>
@@ -23,26 +23,18 @@
     <summary>Your PC in VR</summary>
     <description>Watch movies, browse the web or play games on a giant virtual screen.</description>
     <releaseNotes>
-      Release Notes - Version 1.26.4
-      - Added subtitle support with streamed videos
-      - Added keyboard shortcuts to switch monitor and toggle VR mode
-      - Added VoiceMeeter compatibility option in Streamer window
-      - Improved head/controller prediction on Pico
-      - Improved spacewarp (SSW) quality by increasing the motion vector resolution on Quest 2 and Quest Pro
-      - Improved resolution of portrait monitors
-      - Added Swedish and Irish keyboard layouts
-      - Added Processor/memory information in the About tab
-      - Increased disconnection time after removing headset from 1 to 5 minutes
-      - Fixed timewarp layer positioning in some VR games
-      - Fixed video download queue when cancelling a download
-      - Fixed rare issue with random windows opening after connecting
-      - Fixed rare issue where desktop would not appear after connecting
-      - Fixed long press to always trigger contextual menu in Windows
-      - Fixed compatibility issues with Remote Desktop
-      - Fixed keyboard positioning so that it doesn't overlap the screen
-      - Fixed issue with app exiting when connecting/disconnecting a bluetooth keyboard/mouse on Pico
-      - Fixed bluetooth mouse input on macOS
-      - Fixed compatibility with: Space Engine, Hitman 3, Grapple Tournament
+      Release Notes - Version 1.26.6
+      • Added new VR upscaling option called Snapdragon Game Super Resolution (SGSR) which does something similar to FSR but runs on the headset
+      • Improved compression quality with Nvidia at lower resolutions and high bitrates
+      • SteamVR will now display the correct controller models with Pico headsets
+      • Pico controllers are now darker in desktop/video mode
+      • Fixed performance issues in the Modern Apartment on Pico with OS version 5.4+
+      • Fixed crash when transcoding video containing image-based subtitles
+      • Fixed disconnection on macOS when pressing specific keys on a bluetooth keyboard
+      • Fixed graphic corruption issue when resuming a VR session
+      • Fixed VoiceMeeter mode to change the exclusive flag automatically
+      • Fixed compatibility with: Blade and Sorcery, TWD: Saints and Sinners - Chapter 2, Not for Broadcast VR
+      • Fixed launch (Oculus store and Steam) for Ghosts of Tabor
 
 
       Not all games are compatible with Virtual Desktop.
