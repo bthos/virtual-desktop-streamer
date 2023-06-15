@@ -11,10 +11,8 @@ $packageArgs = @{
 
   softwareName  = 'Virtual Desktop Streamer*'
 
-  checksum      = 'E5EB0B067F6C6450038500584A0C1E2F506BB3D4FFE4B08877F3A608B4B753FB'
+  checksum      = '7E78FA74F157BF568F34B5E016BAEB3547B97E9651C0F3CDA14B72089D35138A'
   checksumType  = 'sha256'
-  checksum64    = 'E5EB0B067F6C6450038500584A0C1E2F506BB3D4FFE4B08877F3A608B4B753FB'
-  checksumType64= 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes= @(0, 3010, 1641)
